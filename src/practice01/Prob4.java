@@ -8,10 +8,10 @@ public class Prob4 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("문자열을 입력하세요 : ");
-		String st = scanner.nextLine();
+		String text = scanner.nextLine();
 				
-		for(int i=0; i<st.length(); i++){
-			System.out.println(st.substring(0, i+1));
+		for(int i=0; i<text.length(); i++){
+			System.out.println(text.substring(0, i+1));
 		}
 
 		scanner.close();
