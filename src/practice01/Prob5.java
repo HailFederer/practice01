@@ -7,25 +7,19 @@ public class Prob5 {
 		for(int i=1; i<10000; i++){
 			
 			st = Integer.toString(i);
-			//st = String.valueOf(i);
 			
 			if(st.contains("3") || st.contains("6") || st.contains("9")){
 				
-				int clapNum = 0;
+				String clap = "";
 				String separateNum = null;
 				for(int j=0; j<st.length(); j++){
 
 					separateNum = st.substring(j, j+1);
 					if(separateNum.equals("3") || separateNum.equals("6") || separateNum.equals("9")){
-						clapNum++;
+						clap += "짝";
 					}
 				}
-				
-				System.out.print(st+" ");
-				for(int m=0; m<clapNum; m++){
-					System.out.print("짝");
-				}
-				System.out.println();
+				System.out.print(st+" "+clap+"\n");
 			}
 		}
 	}
