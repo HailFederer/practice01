@@ -15,7 +15,7 @@ public class Prob5 {
 				for(int j=0; j<st.length(); j++){
 
 					separateNum = st.substring(j, j+1);
-					if(separateNum.equals("3") || separateNum.equals("6") || separateNum.equals("9")){
+					if("3".equals(separateNum) || "6".equals(separateNum) || "9".equals(separateNum)){
 						clap += "짝";
 					}
 				}
